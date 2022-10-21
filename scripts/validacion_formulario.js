@@ -33,16 +33,33 @@ export default function contactFormValidations() {
   });
 
   d.addEventListener("submit", (e) => {
+    e.preventDefault();
+
     const $loader = d.querySelector(".contact-form-loader"),
       $response = d.querySelector(".contact-form-response");
 
     $loader.classList.remove("none");
 
-    setTimeout(() => {
-      $loader.classList.add("none");
-      $response.classList.remove("none");
-      $form.reset();
-      setTimeout(() => $response.classList.add("none"), 3000);
-    }, 3000);
+    fetch("https://formsubmit.co/ajax/luchofseven@gmail.com", {
+      method: "POST",
+      body: new FormData(e.target),
+    })
+      .then((res) => (res.ok ? res.json() : Promise.reject(res)))
+      .then((json) => {
+        $loader.classList.add("none");
+        $response.classList.remove("none");
+        $response.innerHTML = `<p>${json.message}</p>`;
+      })
+      .catch((err) => {
+        let message =
+          err.statusText || "Ocurrió un error al enviar, intenta nuevamente";
+        $response.innerHTML(`<p>Error ${err.status}: ${message}</p>`);
+      })
+      .finally(() =>
+        setTimeout(() => {
+          $response.classList.add("none");
+          $response.innerHTML = "";
+        }, 3000)
+      );
   });
 }
