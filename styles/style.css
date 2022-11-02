@@ -441,7 +441,7 @@ img {
   #hero {
     width: 100%;
     border: none;
-    background-image: url("../assets/hero-image-home2.jpg");
+    background: url("../assets/hero-image-home2.jpg");
     background-repeat: repeat;
     background-size: cover;
     overflow: hidden;
