@@ -13,7 +13,6 @@
   --third-color: #b4bec9;
   --fourth-color: #159a9c;
   --fifth-color: #deefe7;
-  --background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23002D41' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23004667'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* RESET */
@@ -36,8 +35,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  background-color: #002333;
-  background-image: var(--background);
+  background: linear-gradient(-45deg, #001620, #300930, #001620);
 }
 
 img {
@@ -66,7 +64,7 @@ img {
 .header p {
   font-weight: bold;
   font-size: 1.1rem;
-  color: var(--second-color);
+  color: #000000;
 }
 
 .hamburger-box {
@@ -75,12 +73,15 @@ img {
   position: absolute;
   bottom: 1rem;
   right: 5vw;
-  color: var(--second-color);
   z-index: 9999;
 }
 
-.hamburger-box span {
-  color: var(--second-color);
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  background-color: #000000;
+}
+
+.hamburger-box, .hamburger-box::before, .hamburger-box::after {
+  color: #000000;
 }
 
 /* NAVBAR */
@@ -92,8 +93,8 @@ img {
   bottom: 0;
   right: 0;
   width: 100%;
-  background-color: var(--main-color);
-  transition: transform 400ms ease;
+  background: #ffffff;
+  transition: transform 300ms ease;
   transform: translate(0, 100%);
   overflow-y: auto;
 }
@@ -119,7 +120,7 @@ img {
   display: block;
   font-size: 1.1rem;
   text-decoration: none;
-  color: var(--second-color);
+  color: #000000;
 }
 
 .navbar-social {
@@ -141,13 +142,11 @@ img {
   text-align: center;
   padding-top: 2rem;
   min-height: 100vh;
-  background-color: #002333;
-  background-image: var(--background);
 }
 
 .section-title {
   background-color: var(--main-color);
-  color: var(--second-color);
+  color: #000000;
   border-radius: 0.5rem;
   padding: 1rem 0;
   margin: 0;
@@ -174,26 +173,29 @@ img {
 
 #hero-me h1 {
   font-family: "Bebas Neue", cursive;
-  font-size: 3.5rem;
-  letter-spacing: 0.1rem;
-  color: rgb(99, 187, 255);
+  font-size: 3rem;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(5px);
 }
 
 #hero-me h4 {
   font-family: "Silkscreen", cursive;
-  font-size: 1.2rem;
-  color: var(--second-color);
-  width: 80%;
+  font-size: .7rem;
+  color: #000000;
+  width: 70%;
   margin: 0 auto;
-  background-color: var(--main-color);
-  padding: 0.5rem 0.5rem;
-  border-radius: 5rem;
+  background-color: #ffffff;
+  padding: 0.5rem 0;
+  border-radius: 1rem;
 }
 
 #hero-me-photo {
   margin: 0 auto;
-  height: 13rem;
-  width: 13rem;
+  height: 10rem;
+  width: 10rem;
   border: 2px solid #ffffff;
   overflow: hidden;
   border-radius: 50%;
@@ -206,8 +208,11 @@ img {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   text-align: center;
-  background-color: var(--third-color);
-  color: var(--second-color);
+  background: rgba(255, 255, 255, .2);
+  backdrop-filter: blur(5px);
+  color: #ffffff;
+  border-top: thin solid rgba(255, 255, 255, .15);
+  border-left: thin solid rgba(255, 255, 255, .15);
 }
 
 .article:last-child {
@@ -334,18 +339,19 @@ img {
   }
 
   #hero-me h1 {
-    font-size: 7rem;
+    padding: 1.5rem 6rem;
+    font-size: 6rem;
   }
 
   #hero-me h4 {
-    font-size: 1.8rem;
+    padding: 1rem 0;
+    font-size: 1.2rem;
   }
 
   #hero-me-photo {
     margin: 0.5rem auto;
     height: 18rem;
     width: 18rem;
-    border: none;
   }
 
   /* EXPERIENCE SECTION */
@@ -425,7 +431,7 @@ img {
 
   .section {
     min-height: 100vh;
-    width: 75%;
+    max-width: 65%;
     font-size: 1.2rem;
     margin: 0 auto;
     padding-top: 9vh;
@@ -439,51 +445,51 @@ img {
   /* HERO SECTION */
 
   #hero {
-    width: 100%;
-    border: none;
-    background: url("../assets/hero-image-home2.jpg");
-    background-repeat: repeat;
-    background-size: cover;
-    overflow: hidden;
-    padding: 2.5rem 0;
-    min-height: 100vh;
-    border-radius: 0;
+    max-width: 65%;
+    min-height: 55vh;
+    padding: 0 2rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    border-radius: 1.5rem;
+    background: linear-gradient(rgba(232, 158, 255, 0.2) , rgba(0, 0, 0, 0.3));
+    backdrop-filter: blur(1.5px);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, .5);
   }
 
   #hero-me {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   #hero-me h1 {
     font-family: "Bebas Neue", cursive;
-    font-size: 7rem;
-    letter-spacing: 0.1rem;
-    color: rgb(99, 187, 255);
+    font-size: 5rem;
+    letter-spacing: .1rem;
+    color: rgb(255, 255, 255);
     margin: 0;
-    margin-top: 5rem;
-    transition: all 500ms ease;
-  }
-
-  #hero-me h1:hover {
-    transform: scale(1.1);
+    background: none;
+    backdrop-filter: none;
   }
 
   #hero-me h4 {
     font-family: "Silkscreen", cursive;
     width: auto;
-    font-size: 1.5rem;
-    color: var(--second-color);
-    background-color: var(--main-color);
+    font-size: 1.2rem;
+    color: #000000;
+    background-color: #ffffff;
     border-radius: 5rem;
-    padding: 0.8rem 1.5rem;
+    padding: 0.7rem 2rem;
   }
 
   #hero-me-photo {
     margin: 5rem auto;
-    height: 17rem;
-    width: 17rem;
+    min-height: 15rem;
+    min-width: 15rem;
   }
 
   /* ARTICLES */
