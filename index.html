@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luciano Fernandez - Portfolio</title>
+    <meta name="description" content="Portfolio personal de Luciano Fernández, desarrollador web front-end">
     <!-- Hamburger Menu -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
     <!-- My Styles -->
@@ -25,9 +26,9 @@
     <nav class="navbar">
         <ul>
             <a href="#">INICIO</a>
-            <a href="#projects">PROYECTOS</a>
-            <a href="#experience">EXPERIENCIA</a>
-            <a href="#contact-me">CONTACTO</a>
+            <a href="#projects-title">PROYECTOS</a>
+            <a href="#experience-title">EXPERIENCIA</a>
+            <a href="#contact-title">CONTACTO</a>
             <div class="navbar-social">
                 <a href="https://github.com/luchofseven" rel="noopener" target="_blank">
                     <svg width="32" height="32" viewBox="0 0 16 16">
@@ -55,8 +56,24 @@
                 <img src="./assets/me.jpg" alt="luciano">
             </div>
         </section>
+        <h3 id="projects-title" class="section-title">PROYECTOS</h3>
         <section id="projects" class="section">
-            <h3 class="section-title">Proyectos</h3>
+            <article class="article">
+                <a href="https://luchofseven.github.io/mohana-indumentaria/" target="_blank" rel="noopener">
+                    <img src="./assets/proyecto-mohana.png" alt="proyecto mohana">
+                    <h3>Mohana Indumentaria</h3>
+                </a>
+                <p>Proyecto de "Catálogo" para Mohana Indumentaria con fines prácticos. Utilizando Firestore de Firebase
+                    como base de datos para alojar los productos. Sitio construído con JS Vanilla.
+                </p>
+            </article>
+            <article class="article">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae recusandae veniam velit
+                    quis ad
+                    officia? In velit aliquam excepturi! Quo nemo error voluptatibus magni quaerat temporibus totam
+                    quidem
+                    accusamus sunt!</p>
+            </article>
             <article class="article">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae recusandae veniam velit
                     quis ad
@@ -72,8 +89,8 @@
                     accusamus sunt!</p>
             </article>
         </section>
+        <h3 id="experience-title" class="section-title">EXPERIENCIA</h3>
         <section id="experience" class="section">
-            <h3 class="section-title">Experiencia</h3>
             <article class="article">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae recusandae veniam velit
                     quis ad
@@ -89,8 +106,8 @@
                     accusamus sunt!</p>
             </article>
         </section>
+        <h3 id="contact-title" class="section-title">CONTACTO</h3>
         <section id="contact-me" class="section">
-            <h3 class="section-title">Contáctame</h3>
             <form class="contact-form">
                 <div class="contact-form-response none">
                     <p>¡Gracias por contactarme!</p>
