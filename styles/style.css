@@ -213,6 +213,10 @@ img {
   border-left: thin solid rgba(255, 255, 255, .15);
 }
 
+.article a {
+  text-decoration: none;
+}
+
 .article img {
   width: 70%;
   border-radius: .3rem;
