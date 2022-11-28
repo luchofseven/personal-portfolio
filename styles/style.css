@@ -366,11 +366,11 @@ img {
   /* PROJECTS SECTION */
 
   #projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 2rem;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    max-width: 40%;
   }
 
   .article {
@@ -543,11 +543,11 @@ img {
   /* PROJECTS SECTION */
 
   #projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    gap: 2rem;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    max-width: 20%;
   }
 
   .article {
@@ -585,6 +585,11 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  #experience article:hover {
+    transform: none;
+    background: rgba(255, 255, 255, 0.2);
   }
 
   /* FORM */
