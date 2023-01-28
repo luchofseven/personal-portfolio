@@ -72,11 +72,15 @@ img {
   z-index: 9999;
 }
 
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
   background-color: #000000;
 }
 
-.hamburger-box, .hamburger-box::before, .hamburger-box::after {
+.hamburger-box,
+.hamburger-box::before,
+.hamburger-box::after {
   color: #000000;
 }
 
@@ -247,7 +251,7 @@ img {
   width: 90%;
 }
 
-.contact-form > * {
+.contact-form>* {
   padding: 1rem;
   margin: 1rem auto;
   display: block;

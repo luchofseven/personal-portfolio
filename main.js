@@ -1,6 +1,7 @@
 import hamburgerMenu from "./scripts/hamburger_menu.js";
 import scrollBar from "./scripts/scroll.js";
-import contactFormValidations from "./scripts/validacion_formulario.js";
+import contactFormValidations from "./scripts/validacion_formulario.js"
+import rotateEffect from "./scripts/rotate_effect.js"
 
 const w = window;
 
@@ -14,4 +15,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
   }
 
   contactFormValidations();
+
+  rotateEffect()
 });
