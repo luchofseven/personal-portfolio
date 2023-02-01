@@ -114,6 +114,11 @@ img {
   padding: 0;
 }
 
+.navbar ul img {
+  min-width: 5rem;
+  max-width: 5rem;
+}
+
 .navbar a {
   width: inherit;
   padding: 1.8rem;
@@ -160,7 +165,7 @@ img {
   align-items: center;
   justify-content: space-evenly;
   min-height: calc(100vh - 4rem);
-  background: url("../assets/hero-image-home2.jpg");
+  background: url("../assets/hero.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -200,6 +205,7 @@ img {
   border: 2px solid #ffffff;
   overflow: hidden;
   border-radius: 50%;
+  text-align: center;
 }
 
 /* ARTICLES */
@@ -219,6 +225,10 @@ img {
 
 .article a {
   text-decoration: none;
+}
+
+.article a p {
+  color: var(--main-color);
 }
 
 .article img {
@@ -353,18 +363,18 @@ img {
 
   #hero-me h1 {
     padding: 1.5rem 6rem;
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   #hero-me h4 {
     padding: 1rem 0;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   #hero-me-photo {
     margin: 0.5rem auto;
-    height: 18rem;
-    width: 18rem;
+    height: 15rem;
+    width: 15rem;
   }
 
   /* PROJECTS SECTION */
@@ -485,7 +495,7 @@ img {
   /* SECTION */
 
   .section {
-    max-width: 65%;
+    max-width: 75%;
     margin: 3rem auto;
   }
 
@@ -498,7 +508,7 @@ img {
 
   #hero {
     max-width: 75%;
-    min-height: 55vh;
+    min-height: 50vh;
     margin: 0 auto;
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -531,7 +541,7 @@ img {
   #hero-me h4 {
     font-family: "Silkscreen", cursive;
     width: auto;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #000000;
     background-color: #ffffff;
     border-radius: 5rem;
@@ -540,8 +550,8 @@ img {
 
   #hero-me-photo {
     margin: 5rem auto;
-    min-height: 15rem;
-    min-width: 15rem;
+    min-height: 14rem;
+    min-width: 14rem;
   }
 
   /* PROJECTS SECTION */
@@ -551,7 +561,8 @@ img {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 20%;
+    min-width: 75%;
+    max-width: 75%;
   }
 
   .article {
@@ -559,6 +570,9 @@ img {
     min-height: 30rem;
     transition: all 200ms ease;
     margin: 0;
+    cursor: pointer;
+    text-align: center;
+    max-width: 30%;
   }
 
   .article:hover {
@@ -566,33 +580,34 @@ img {
     background: rgba(255, 255, 255, 0.4);
   }
 
-  .article img {
-    width: 65%;
+  .article a {
+    padding: 0;
+    margin: 0;
   }
 
-  .article p {
-    padding: 0 1rem;
+  .article img {
+    width: 65%;
   }
 
   /* EXPERIENCE SECTION */
 
   #experience {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 1.5rem;
-    align-items: center;
-  }
-
-  #experience article {
-    min-height: 15rem;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
+  #experience article {
+    min-height: auto;
+    max-height: auto;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 3rem 0rem;
+    cursor: auto;
+  }
+
   #experience article:hover {
-    transform: none;
+    transform: scale(1);
     background: rgba(255, 255, 255, 0.2);
   }
 
