@@ -9,6 +9,8 @@
     <meta name="description" content="Portfolio personal de Luciano Fernández, desarrollador web front-end">
     <!-- Hamburger Menu -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+    <!-- Atropos -->
+    <link rel="stylesheet" href="atropos/atropos.min.css" />
     <!-- My Styles -->
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="shortcut icon" href="./assets/lf-logo.png" type="image/x-icon">
@@ -50,12 +52,22 @@
     </nav>
     <main class="container">
         <section id="hero">
-            <div id="hero-me">
-                <h1><i>Luciano Fernández</i></h1>
-                <h4>Desarrollo front-end</h4>
-            </div>
-            <div id="hero-me-photo">
-                <img src="./assets/me.png" alt="luciano">
+            <div class="atropos my-atropos">
+                <div class="atropos-scale">
+                    <div class="atropos-rotate">
+                        <div class="atropos-inner">
+                            <header class="atropos-header">
+                                <div id="hero-me">
+                                    <h1 data-atropos-offset="5"><i>Luciano Fernández</i></h1>
+                                    <h4 data-atropos-offset="5">Desarrollo front-end</h4>
+                                </div>
+                                <div data-atropos-offset="5" id="hero-me-photo">
+                                    <img src="./assets/me.png" alt="luciano">
+                                </div>
+                            </header>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <h3 id="projects-title" class="section-title">PROYECTOS</h3>
@@ -106,6 +118,7 @@
     <footer class="footer">
         <p>WebSite Diseñado y Programado por mí &#128526</p>
     </footer>
+    <script src="atropos/atropos.min.js"></script>
     <script src="./main.js" type="module"></script>
 </body>
 

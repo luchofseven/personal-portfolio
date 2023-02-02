@@ -9,10 +9,10 @@
 /* COLORS */
 :root {
   --main-color: #ffffff;
+  --projects-title-color: #ffee00;
 }
 
 /* RESET */
-
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -40,7 +40,6 @@ img {
 }
 
 /* HEADER */
-
 .header {
   position: fixed;
   bottom: 0;
@@ -72,6 +71,10 @@ img {
   z-index: 9999;
 }
 
+.hamburger-inner {
+  height: 5px;
+}
+
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
@@ -85,7 +88,6 @@ img {
 }
 
 /* NAVBAR */
-
 .navbar {
   position: fixed;
   z-index: 998;
@@ -133,54 +135,69 @@ img {
 }
 
 /* MAIN CONTAINER */
-
 .container {
   width: 100%;
   margin: 0 auto;
 }
 
 /* SECTION */
-
 .section {
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
+  padding: 0;
   text-align: center;
 }
 
+.section:last-child {
+  margin-bottom: 4rem;
+}
+
 .section-title {
-  width: 85%;
-  margin: 2rem auto;
+  width: 90%;
+  margin: 0 auto;
+  margin: 4rem auto;
   padding: 1rem 0;
   text-align: center;
   background-color: var(--main-color);
   color: #000000;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
 }
 
 /* HERO SECTION */
-
-#hero {
+.atropos-header {
+  margin-top: 2rem;
+  width: 100%;
+  min-height: 400px;
+  max-height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  min-height: calc(100vh - 4rem);
   background: url("../assets/hero.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 1rem;
+}
+
+#hero {
+  min-width: 90%;
+  max-width: 90%;
+  min-height: auto;
+  max-height: auto;
+  margin: 0 auto;
 }
 
 #hero-me {
-  margin: 0 auto;
+  margin: 1rem;
   text-align: center;
 }
 
 #hero-me h1 {
   font-family: "Bebas Neue", cursive;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #ffffff;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.1);
   padding: 1rem 1.5rem;
   border-radius: 1rem;
   backdrop-filter: blur(5px);
@@ -189,19 +206,19 @@ img {
 
 #hero-me h4 {
   font-family: "Silkscreen", cursive;
-  font-size: .7rem;
+  font-size: .6rem;
   color: #000000;
   width: 70%;
   margin: 0 auto;
   background-color: #ffffff;
-  padding: 0.5rem 0;
+  padding: .5rem 1rem;
   border-radius: 1rem;
 }
 
 #hero-me-photo {
   margin: 0 auto;
-  height: 10rem;
-  width: 10rem;
+  height: 8rem;
+  width: 8rem;
   border: 2px solid #ffffff;
   overflow: hidden;
   border-radius: 50%;
@@ -211,9 +228,9 @@ img {
 /* ARTICLES */
 .article {
   font-size: 1rem;
-  margin: 4rem 0;
-  padding: 1rem 1rem;
-  border-radius: 0.5rem;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 1rem;
   text-align: center;
   color: var(--main-color);
   background: rgba(255, 255, 255, .2);
@@ -232,23 +249,12 @@ img {
 }
 
 .article img {
-  width: 70%;
-  border-radius: .3rem;
-  margin: 1rem 0 0 0;
+  width: 60%;
+  border-radius: .5rem;
 }
 
 .article h3 {
-  color: #f07eff;
-}
-
-#experience article {
-  padding: 2rem;
-}
-
-/* CONTACT SECTION */
-
-#contact-me {
-  margin-bottom: 4rem;
+  color: var(--projects-title-color);
 }
 
 /* FORM VALIDATES */
@@ -353,117 +359,46 @@ img {
 
 /* MEDIA QUERY 768 - 1024 */
 @media (min-width: 768px) and (max-width: 1023px) {
+
   /* MAIN CONTAINER */
-
   .container {
-    width: 100%;
-  }
-
-  /* SECTION */
-
-  .section {
-    max-width: 75%;
-    margin: 3rem auto;
-  }
-
-  .section-title {
-    min-width: 75%;
-    max-width: 75%;
-    margin: 0 auto;
-    margin-top: 3rem;
+    width: 90%;
   }
 
   /* HERO SECTION */
-
-  #hero {
-    justify-content: space-evenly;
-    min-height: calc(100vh - 4rem);
-  }
-
-  #hero-me h1 {
-    padding: 1.5rem 6rem;
-    font-size: 5rem;
-  }
-
-  #hero-me h4 {
-    padding: 1rem 0;
-    font-size: 1.1rem;
-  }
-
   #hero-me-photo {
-    margin: 0.5rem auto;
-    height: 15rem;
-    width: 15rem;
+    height: 7rem;
+    width: 7rem;
   }
 
-  /* PROJECTS SECTION */
-
-  #projects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 40%;
-  }
-
-  .article {
-    min-height: 30rem;
-    margin: 0;
-    overflow-y: auto;
-    font-size: 1rem;
-  }
-
+  /* ARTICLES */
   .article img {
-    width: 70%;
+    width: 30%;
   }
 
-  .article p {
-    padding: 0 1rem;
-  }
-
-  /* EXPERIENCE SECTION */
-
-  #experience {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 2rem;
-    align-items: center;
-  }
-
-  #experience article {
-    min-height: 15rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /* CONTACT SECTION */
-
-  #contact-me {
-    margin-bottom: 4rem;
-  }
-
+  /* FORM VALIDATES */
   .contact-form {
     width: 80%;
+    padding: 0;
+    margin: 0 auto;
   }
 
   .contact-form input[type="submit"] {
-    width: 25%;
+    width: 30%;
   }
 }
 
 /* MEDIA QUERY > 1024 */
 @media (min-width: 1024px) {
-  /* MAIN CONTAINER */
 
+  /* MAIN CONTAINER */
   .container {
-    width: 100%;
+    width: 70%;
     margin: 0 auto;
+    padding: 0;
   }
 
   /* HEADER */
-
   .header {
     display: none;
   }
@@ -473,7 +408,6 @@ img {
   }
 
   /* NAVBAR */
-
   .navbar {
     position: fixed;
     top: 0;
@@ -489,7 +423,7 @@ img {
   }
 
   .navbar ul {
-    width: 75%;
+    width: 70%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -519,30 +453,26 @@ img {
   }
 
   /* SECTION */
-
   .section {
-    max-width: 75%;
-    margin: 3rem auto;
+    width: 100%;
+  }
+
+  .section:last-child {
+    margin-bottom: 4rem;
   }
 
   .section-title {
-    min-width: 75%;
-    max-width: 75%;
-    margin: 0 auto;
+    width: 100%;
   }
 
   /* HERO SECTION */
-
   #hero {
-    max-width: 75%;
-    min-height: 50vh;
-    margin: 0 auto;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    border-radius: 1.5rem;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .atropos-header {
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: space-evenly;
   }
 
@@ -551,55 +481,43 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 1rem auto;
+    text-align: center;
   }
 
   #hero-me h1 {
-    font-family: "Bebas Neue", cursive;
-    font-size: 5rem;
-    letter-spacing: .1rem;
-    color: rgb(255, 255, 255);
-    margin: 2rem 0;
-    padding: 1rem 4rem;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
+    font-size: 4rem;
   }
 
   #hero-me h4 {
-    font-family: "Silkscreen", cursive;
-    width: auto;
     font-size: 1rem;
-    color: #000000;
-    background-color: #ffffff;
-    border-radius: 5rem;
-    padding: 0.7rem 2rem;
   }
 
   #hero-me-photo {
-    margin: 5rem auto;
-    min-height: 14rem;
-    min-width: 14rem;
+    height: 12rem;
+    width: 12rem;
+    border: none;
+    border-radius: 50%;
   }
 
   /* PROJECTS SECTION */
-
   #projects {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    min-width: 75%;
-    max-width: 75%;
+    gap: 3rem;
   }
 
   .article {
     font-size: 1rem;
-    min-height: 30rem;
-    transition: all 200ms ease;
+    max-width: 40%;
+    min-height: auto;
     margin: 0;
+    padding: 1rem 2rem;
     cursor: pointer;
     text-align: center;
-    max-width: 30%;
+    transition: all 200ms ease;
   }
 
   .article:hover {
@@ -607,35 +525,24 @@ img {
     background: rgba(255, 255, 255, 0.4);
   }
 
-  .article a {
-    padding: 0;
-    margin: 0;
-  }
-
-  .article img {
-    width: 65%;
-  }
-
   /* EXPERIENCE SECTION */
-
   #experience {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
   }
 
   #experience article {
-    min-height: auto;
-    max-height: auto;
     min-width: 100%;
     max-width: 100%;
-    padding: 3rem 0rem;
-    cursor: auto;
   }
 
   #experience article:hover {
     transform: scale(1);
     background: rgba(255, 255, 255, 0.2);
+    cursor: auto;
   }
 
   /* FORM */
@@ -644,7 +551,7 @@ img {
   }
 
   .contact-form input[type="submit"] {
-    width: 30%;
+    width: 20%;
     transition: all 200ms ease;
   }
 
