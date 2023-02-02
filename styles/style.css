@@ -71,10 +71,6 @@ img {
   z-index: 9999;
 }
 
-.hamburger-inner {
-  height: 5px;
-}
-
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
