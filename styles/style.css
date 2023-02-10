@@ -221,6 +221,16 @@ img {
   text-align: center;
 }
 
+/* PROJECTS SECTION */
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
 /* ARTICLES */
 .article {
   font-size: 1rem;
@@ -499,8 +509,9 @@ img {
   /* PROJECTS SECTION */
   #projects {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
     gap: 3rem;
   }
