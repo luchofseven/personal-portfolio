@@ -248,6 +248,12 @@ img {
 
 .article a {
   text-decoration: none;
+  color: var(--main-color);
+}
+
+
+.frontend-practice-link {
+  color: yellow !important;
 }
 
 .article a p {
