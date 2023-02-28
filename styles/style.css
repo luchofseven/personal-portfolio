@@ -34,6 +34,18 @@ body {
   background: linear-gradient(-45deg, #001620, #300930, #001620);
 }
 
+body::-webkit-scrollbar {
+  width: .6rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(196, 0, 196);
+}
+
 img {
   max-width: 100%;
   height: auto;
