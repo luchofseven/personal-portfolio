@@ -343,7 +343,7 @@ img {
 }
 
 .contact-form [required]:invalid {
-  border: 1px solid var(--form-error-color);
+  border: none;
 }
 
 .contact-form-error {
