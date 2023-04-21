@@ -339,7 +339,7 @@ img {
 }
 
 .contact-form [required]:valid {
-  border: 1px solid var(--form-ok-color);
+ border: none;
 }
 
 .contact-form [required]:invalid {
