@@ -138,6 +138,10 @@ img {
   color: #000000;
 }
 
+#logo-lg {
+  display: none;
+}
+
 .navbar-social {
   display: flex;
 }
@@ -473,6 +477,10 @@ img {
     justify-content: space-between;
     padding: 0;
     margin: 0;
+  }
+
+  #logo-lg {
+    display: block;
   }
 
   /* SECTION */
