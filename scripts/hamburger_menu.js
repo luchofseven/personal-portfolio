@@ -19,5 +19,12 @@ export default function hamburgerMenu(navBar, btn) {
       $btn.classList.remove("is-active");
       $navBar.classList.toggle("is-active");
     }
+
+    if (
+      $navBar.classList.contains("is-active") &&
+      e.target.matches(".header a *")
+    ) {
+      $navBar.classList.remove("is-active");
+    }
   });
 }
