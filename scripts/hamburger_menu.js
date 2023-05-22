@@ -25,6 +25,7 @@ export default function hamburgerMenu(navBar, btn) {
       e.target.matches(".header a *")
     ) {
       $navBar.classList.remove("is-active");
+      $btn.classList.remove("is-active");
     }
   });
 }
