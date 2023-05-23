@@ -285,6 +285,18 @@ img {
   color: var(--projects-title-color);
 }
 
+#aboutme {
+  text-align: start;
+  line-height: 1.6rem;
+  letter-spacing: .08rem;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
 /* FORM VALIDATES */
 .contact-form {
   --form-ok-color: #4caf50;
