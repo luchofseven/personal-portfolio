@@ -1,6 +1,6 @@
 import hamburgerMenu from "./scripts/hamburger_menu.js";
 import scrollBar from "./scripts/scroll.js";
-import contactFormValidations from "./scripts/validacion_formulario.js"
+import contactFormValidations from "./scripts/validacion_formulario.js";
 
 const w = window;
 
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
   contactFormValidations();
 
   Atropos({
-    el: '.my-atropos',
+    el: ".my-atropos",
     shadow: false,
     rotateLock: true,
     rotateXMax: 10,

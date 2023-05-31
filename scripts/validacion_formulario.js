@@ -48,8 +48,10 @@ export default function contactFormValidations() {
       .then((json) => {
         $loader.classList.add("none");
         $response.classList.remove("none");
-        $response.innerHTML = `<p>${"¡Gracias por hacer su consulta!" || json.message}</p>`;
-        $form.reset()
+        $response.innerHTML = `<p>${
+          "¡Gracias por hacer su consulta!" || json.message
+        }</p>`;
+        $form.reset();
       })
       .catch((err) => {
         let message =

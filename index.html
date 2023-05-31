@@ -1,18 +1,20 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luciano Fernandez - Portfolio Personal</title>
-    <meta name="title" content="Luciano Fernandez portfolio personal"/>
+    <meta name="title" content="Luciano Fernandez portfolio personal" />
     <meta name="description" content="Portfolio personal de Luciano Fernández, desarrollador web front-end">
     <!-- OG Markup -->
-    <meta name="title" property="og:title" content="Luciano Fernandez portfolio personal"/>
-    <meta name="type" property="og:type" content="website"/>
-    <meta name="image" property="og:image" content="/assets/portada-website.webp"/>
-    <meta name="url" property="og:url" content="https://luchofseven.github.io/personal-portfolio/"/>
-    <meta name="description" property="og:description" content="Portfolio personal de Luciano Fernández, desarrollador web front-end" />
+    <meta name="title" property="og:title" content="Luciano Fernandez portfolio personal" />
+    <meta name="type" property="og:type" content="website" />
+    <meta name="image" property="og:image" content="/assets/portada-website.webp" />
+    <meta name="url" property="og:url" content="https://luchofseven.github.io/personal-portfolio/" />
+    <meta name="description" property="og:description"
+        content="Portfolio personal de Luciano Fernández, desarrollador web front-end" />
     <!-- My Styles -->
     <link rel="stylesheet" href="./styles/style.css">
     <!-- Atropos -->
@@ -45,6 +47,7 @@
             <a href="#aboutme-title">SOBRE MÍ</a>
             <!-- <a href="#experience-title">EXPERIENCIA</a> -->
             <a href="#contact-title">CONTACTO</a>
+            <a href="./assets/cv/cv-luciano-fernandez.pdf" download>DESCARGAR CV</a>
             <div class="navbar-social">
                 <a href="https://github.com/luchofseven" rel="noopener" target="_blank" aria-label="Github">
                     <svg width="32" height="32" viewBox="0 0 16 16">
@@ -71,10 +74,11 @@
                             <header class="atropos-header">
                                 <div id="hero-me">
                                     <h1 data-atropos-offset="5"><i>Luciano Fernández</i></h1>
-                                    <h4 data-atropos-offset="5">Desarrollo front-end</h4>
+                                    <h4 data-atropos-offset="5">Front-end Developer</h4>
                                 </div>
                                 <div data-atropos-offset="5" id="hero-me-photo">
-                                    <img src="./assets/me.webp" alt="Foto de Luciano Fernandez" width="168px" height="168px">
+                                    <img src="./assets/me.webp" alt="Foto de Luciano Fernandez" width="168px"
+                                        height="168px">
                                 </div>
                             </header>
                         </div>
@@ -85,29 +89,52 @@
         <h3 id="projects-title" class="section-title">PROYECTOS</h3>
         <section id="projects" class="section">
             <article class="article">
+                <a href="https://todo-app-next-woad.vercel.app/" target="_blank" rel="noopener">
+                    <img src="./assets/proyecto-todo-next.webp" alt="Imagen de la web TO-DO creada con Next.Js"
+                        height="200px" width="300px">
+                    <h3>TO-DO App (Next.Js)</h3>
+                    <p>
+                        Proyecto "Lista de tareas" en el cual se pueden agregar, editar o eliminar estas. En este caso
+                        se utilizó Next.Js y Tailwind.
+                    </p>
+                    <a style="color: #eeff00;" href="https://github.com/luchofseven/crud-nextjs-tailwind.git"
+                        rel="noopener" target="_blank">Repositorio en GitHub</a>
+                </a>
+            </article>
+            <article class="article">
                 <a href="https://movies-search-app-phi.vercel.app/" target="_blank" rel="noopener">
-                    <img src="./assets/proyecto-movies-search.webp" alt="Imagen de la web para buscar películas" height="auto" width="auto">
+                    <img src="./assets/proyecto-movies-search.webp" alt="Imagen de la web para buscar películas"
+                        height="auto" width="auto">
                     <h3>Movies Search App (React)</h3>
-                    <p>Proyecto para buscar, listar películas y series. El proyecto está realizado con React, haciendo uso hooks y también la implementación de un debounce, para que al escribir la búsqueda, la petición se haga de forma automática luego de haber transcurrido algunos segundos.</p>
+                    <p>
+                        Proyecto para buscar, listar películas y series. El proyecto está realizado con React, haciendo
+                        uso hooks y también la implementación de un debounce, para que al escribir la búsqueda, la
+                        petición se haga de forma automática luego de haber transcurrido algunos segundos.
+                    </p>
                     <a style="color: #eeff00;" href="https://github.com/luchofseven/movies-search-app.git"
                         rel="noopener" target="_blank">Repositorio en GitHub</a>
                 </a>
             </article>
             <article class="article">
                 <a href="https://todo-app-two-murex-52.vercel.app/" target="_blank" rel="noopener">
-                    <img src="./assets/proyecto-todo.webp" alt="Imagen de la web de lista de tareas" height="auto" width="auto">
+                    <img src="./assets/proyecto-todo.webp" alt="Imagen de la web de lista de tareas" height="auto"
+                        width="auto">
                     <h3>TO-DO App (React)</h3>
-                    <p>Proyecto "Lista de tareas". Realizado con React para la creación de componentes y Sass para añadirle estilos de una forma más práctica.
+                    <p>
+                        Proyecto "Lista de tareas". Realizado con React para la creación de componentes y Sass para
+                        añadirle estilos de una forma más práctica.
                     </p>
-                    <a style="color: #eeff00;" href="https://github.com/luchofseven/todo-app.git"
-                        rel="noopener" target="_blank">Repositorio en GitHub</a>
+                    <a style="color: #eeff00;" href="https://github.com/luchofseven/todo-app.git" rel="noopener"
+                        target="_blank">Repositorio en GitHub</a>
                 </a>
             </article>
             <article class="article">
                 <a href="https://bonsai-proyecto-react.vercel.app/" target="_blank" rel="noopener">
-                    <img src="./assets/proyecto-bonsai.webp" alt="Imagen del proyecto bonsai react" height="auto" width="auto">
+                    <img src="./assets/proyecto-bonsai.webp" alt="Imagen del proyecto bonsai react" height="auto"
+                        width="auto">
                     <h3>Bonsai "Clone" (React)</h3>
-                    <p>Proyecto "Clon" de Bonsai con fines prácticos. Ejercicio tomado de
+                    <p>
+                        Proyecto "Clon" de Bonsai con fines prácticos. Ejercicio tomado de
                         <a class="frontend-practice-link" href="https://www.frontendpractice.com/" rel="noopener"
                             target="_blank">
                             <i>Frontend Practice.</i>
@@ -121,13 +148,11 @@
             </article>
             <article class="article">
                 <a href="https://mohana-proyecto-react.vercel.app/" target="_blank" rel="noopener">
-                    <img src="./assets/proyecto-mohana-react.webp" alt="Imagen del proyecto mohana react" height="auto" width="auto">
+                    <img src="./assets/proyecto-mohana-react.webp" alt="Imagen del proyecto mohana react" height="auto"
+                        width="auto">
                     <h3>Mohana Indumentaria (React)</h3>
-                    <p>Proyecto de Mohana Indumentaria con fines prácticos. En ésta ocasión el sitio está construído con
-                        React.
-                        Se sigue utilizando Firestore de
-                        Firebase
-                        como en el proyecto anterior.
+                    <p>
+                        Proyecto de Mohana Indumentaria con fines prácticos, utilizando React y Firebase.
                     </p>
                     <a style="color: #eeff00;" href="https://github.com/luchofseven/mohana-proyecto-react.git"
                         rel="noopener" target="_blank">Repositorio en GitHub</a>
@@ -135,11 +160,12 @@
             </article>
             <article class="article">
                 <a href="https://luchofseven.github.io/mohana-indumentaria/" target="_blank" rel="noopener">
-                    <img src="./assets/proyecto-mohana.webp" alt="Imagen del proyecto mohana" height="auto" width="auto">
+                    <img src="./assets/proyecto-mohana.webp" alt="Imagen del proyecto mohana" height="auto"
+                        width="auto">
                     <h3>Mohana Indumentaria</h3>
-                    <p>Proyecto de "Catálogo" para Mohana Indumentaria con fines prácticos. Utilizando Firestore de
-                        Firebase
-                        como base de datos para alojar los productos. Sitio construído con JS Vanilla.
+                    <p>
+                        Proyecto de "Catálogo" para Mohana Indumentaria con fines prácticos. Utilizando Firestore de
+                        Firebase como base de datos para alojar los productos. Sitio construído con JS Vanilla.
                     </p>
                     <a style="color: #eeff00;" href="https://github.com/luchofseven/mohana-indumentaria.git"
                         rel="noopener" target="_blank">Repositorio en GitHub</a>
@@ -150,13 +176,16 @@
         <section id="aboutme" class="section">
             <article>
                 <p>
-                    💻 Inicié mis pasos en el mundo de la programación hace aproximadamente más de 2 años. En todo este tiempo adquirí conocimientos en HTML, CSS, SASS, Javascript, React JS, Next JS, Tailwind, entre otros.
+                    💻 Inicié mis pasos en el mundo de la programación hace aproximadamente más de 2 años. En todo este
+                    tiempo adquirí conocimientos en HTML, CSS, SASS, Javascript, React JS, Next JS, Tailwind, entre
+                    otros.
+                    En la actualidad, me encuentro trabajando constantemente sobre proyectos personales con el fin de
+                    aplicar y conocer nuevas tecnologías, además de profundizar y perfeccionar las habilidades ya
+                    adquiridas.
                 </p>
                 <p>
-                    🎯 Mi objetivo es desempeñarme profesionalmente en el sector de desarrollo de una empresa.
-                </p>
-                <p>
-                    🎨 También diseño banners, flyers, wallpapers por hobbie 🤪, utilizando Adobe Photoshop.
+                    🎯 Me encantaría formar parte de manera profesional en el sector de desarrollo de una empresa,
+                    utilizando en lo posible, React como tecnología principal.
                 </p>
             </article>
         </section>
@@ -171,7 +200,9 @@
         <section id="contact-me" class="section">
             <form class="contact-form">
                 <div class="contact-form-response none">
-                    <p>¡Gracias por contactarme!</p>
+                    <p>
+                        ¡Gracias por contactarme!
+                    </p>
                 </div>
                 <div class="contact-form-loader none">
                     <img src="./assets/puff.svg" alt="Cargando">
@@ -192,7 +223,9 @@
         </section>
     </main>
     <footer class="footer">
-        <p>WebSite Diseñado y Programado por mí &#128526</p>
+        <p>
+            <i>Website diseñado y programado por mí &#128526</i>
+        </p>
     </footer>
     <script src="atropos/atropos.min.js"></script>
     <script src="./main.js" type="module"></script>
