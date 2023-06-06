@@ -284,6 +284,11 @@ img {
   color: var(--projects-title-color);
 }
 
+.info {
+  padding: 1rem 0rem;
+  color: #faffb4;
+}
+
 #aboutme {
   text-align: start;
   line-height: 1.6rem;
