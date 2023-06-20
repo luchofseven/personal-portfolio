@@ -173,6 +173,7 @@ img {
   background-color: var(--main-color);
   color: #000000;
   border-radius: 1rem;
+  scroll-margin-top: 2rem;
 }
 
 /* HERO SECTION */
@@ -517,6 +518,7 @@ img {
 
   .section-title {
     width: 100%;
+    scroll-margin-top: 5rem;
   }
 
   /* HERO SECTION */
@@ -561,12 +563,16 @@ img {
     justify-content: center;
     align-items: stretch;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 4rem;
+  }
+
+  #projects > article:last-child {
+    margin: 0 auto;
   }
 
   .article {
     font-size: 1rem;
-    max-width: 40%;
+    max-width: 45%;
     min-height: auto;
     margin: 0;
     padding: 1rem 2rem;
