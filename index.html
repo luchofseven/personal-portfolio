@@ -56,7 +56,6 @@
             </a>
             <a href="#projects-title">PROYECTOS</a>
             <a href="#aboutme-title">SOBRE MÍ</a>
-            <!-- <a href="#experience-title">EXPERIENCIA</a> -->
             <a href="#contact-title">CONTACTO</a>
             <a href="./assets/cv/cv-luciano-fernandez.pdf" download>DESCARGAR CV</a>
             <div class="navbar-social">
@@ -218,16 +217,9 @@
                 </p>
             </article>
         </section>
-        <!-- <h3 id="experience-title" class="section-title">EXPERIENCIA</h3>
-        <section id="experience" class="section">
-            <article class="article">
-                <p>Actualmente trabajando sobre proyectos personales y/o familiares con fines prácticos para crecer y
-                    mejorar la calidad de mis conocimientos.</p>
-            </article>
-        </section> -->
         <h3 id="contact-title" class="section-title">CONTACTO</h3>
         <section id="contact-me" class="section">
-            <form class="contact-form">
+            <form id="contact-form" class="contact-form">
                 <div class="contact-form-response none">
                     <p>
                         ¡Gracias por contactarme!
@@ -245,9 +237,9 @@
                 <input type="text" name="subject" placeholder="Consulta a tratar" title="El asunto es requerido"
                     required>
                 <textarea name="comments" cols="50" rows="5" placeholder="Escribe tus comentarios"
-                    data-pattern="^.{1,255}$" title="Tu comentario no debe exceder los 255 caracteres"
-                    required></textarea>
-                <input type="submit" value="Enviar">
+                    data-pattern="^.{1,255}$" title="Tu comentario no debe exceder los 255 caracteres" required>
+                </textarea>
+                <input id="contact-form-submit" type="submit" value="Enviar">
             </form>
         </section>
     </main>

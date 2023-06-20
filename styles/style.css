@@ -423,6 +423,10 @@ img {
     width: 7rem;
   }
 
+  #projects > article {
+    width: 100%;
+  }
+
   /* ARTICLES */
   .article img {
     width: 30%;
