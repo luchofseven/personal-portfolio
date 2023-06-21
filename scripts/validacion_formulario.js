@@ -2,7 +2,8 @@ const d = document;
 
 export default function contactFormValidations() {
   const $form = d.querySelector(".contact-form"),
-    $inputs = d.querySelectorAll(".contact-form [required]");
+    $inputs = d.querySelectorAll(".contact-form [required]"),
+    $inputSubmit = d.getElementById("contact-form-submit");
 
   $inputs.forEach((input) => {
     const $span = d.createElement("span");
@@ -33,6 +34,7 @@ export default function contactFormValidations() {
   });
 
   d.addEventListener("submit", (e) => {
+    $inputSubmit.setAttribute("disabled", "")
     e.preventDefault();
 
     const $loader = d.querySelector(".contact-form-loader"),
@@ -62,6 +64,7 @@ export default function contactFormValidations() {
         setTimeout(() => {
           $response.classList.add("none");
           $response.innerHTML = "";
+          $inputSubmit.removeAttribute("disabled", "")
         }, 3000)
       );
   });

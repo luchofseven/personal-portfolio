@@ -355,10 +355,6 @@ img {
   border: none;
 }
 
-.contact-form *::placeholder {
-  color: var(--second-color);
-}
-
 .contact-form [required]:valid {
   border: none;
 }
